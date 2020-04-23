@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning Sphere</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+
+
+<!-- slider info -->
+<div class="slider-cont">
+    <div class="slice">
+        <h1>number of rings</h1>
+        <input type="range" min="1" max="25" value="12" class="slice" id="sliced">
+        <div id="sliced-output" class="output">12</div>
+    </div>
+
+    <div class="dots-cont">
+        <h1>number of dots</h1>
+        <input type="range" min="1" max="150" value="24" class="dot" id="dotted">
+        <div id="dotted-output" class="output">24</div>
+    </div>
+
+    <button id="reset">Reset</button>
+
+</div>
+
+<!-- main slider -->
+<div class="main-slider-cont">
+    <!-- row 1 -->
+    <div class="a1-cont">
+        <h1>a1</h1>
+        <input type="range" min="0" max="10" value="0" step="0.01" class="a1" id="ida1">
+        <div id="a1-output" class="output">0</div>
+    </div>
+
+    <div class="b1-cont">
+        <h1>b1</h1>
+        <input type="range" min="0" max="200" value="0" class="b1" id="idb1">
+        <div id="b1-output" class="output">0</div>
+    </div>
+
+    <div class="c1-cont">
+        <h1>c1</h1>
+        <input type="range" min="0" max="10" value="0" step="0.1" class="c1" id="idc1">
+        <div id="c1-output" class="output">0</div>
+    </div>
+
+    <div class="d1-cont">
+        <h1>d1</h1>
+        <input type="range" min="-0.5" max="0.5" value="0" step="0.01" class="d1" id="idd1">
+        <div id="d1-output" class="output">0</div>
+    </div>
+
+<!-- row 2 -->
+    <div class="a2-cont">
+        <h1>a2</h1>
+        <input type="range" min="0" max="10" value="0" step="0.01" class="a2" id="ida2">
+        <div id="a2-output" class="output">0</div>
+    </div>
+
+    <div class="b2-cont">
+        <h1>b2</h1>
+        <input type="range" min="1" max="200" value="0" class="b2" id="idb2">
+        <div id="b2-output" class="output">0</div>
+    </div>
+
+    <div class="c2-cont">
+        <h1>c2</h1>
+        <input type="range" min="0" max="10" value="0" step="0.1" class="c2" id="idc2">
+        <div id="c2-output" class="output">0</div>
+    </div>
+
+    <div class="d2-cont">
+        <h1>d2</h1>
+        <input type="range" min="-0.5" max="0.5" value="0" step="0.01" class="d2" id="idd2">
+        <div id="d2-output" class="output">0</div>
+    </div>
+
+    <!-- row 3 -->
+    <div class="a3-cont">
+        <h1>a3</h1>
+        <input type="range" min="0" max="10" value="0" step="0.01" class="a3" id="ida3">
+        <div id="a3-output" class="output">0</div>
+    </div>
+
+    <div class="b3-cont">
+        <h1>b3</h1>
+        <input type="range" min="0" max="200" value="0" class="b3" id="idb3">
+        <div id="b3-output" class="output">0</div>
+    </div>
+
+    <div class="c3-cont">
+        <h1>c3</h1>
+        <input type="range" min="0" max="10" value="0" step="0.1" class="c3" id="idc3">
+        <div id="c3-output" class="output">0</div>
+    </div>
+
+    <div class="d3-cont">
+        <h1>d3</h1>
+        <input type="range" min="-0.5" max="0.5" value="0" step="0.01" class="d3" id="idd3">
+        <div id="d3-output" class="output">0</div>
+    </div>
+
+    <!-- row 4 -->
+    <div class="a4-cont">
+        <h1>a4</h1>
+        <input type="range" min="-1" max="100" value="-1" step="1" class="a4" id="ida4">
+        <div id="a4-output" class="output">0</div>
+    </div>
+
+    <div class="b4-cont">
+        <h1>b4</h1>
+        <input type="range" min="0" max="200" value="0" class="b4" id="idb4">
+        <div id="b4-output" class="output">0</div>
+    </div>
+
+    <div class="c4-cont">
+        <h1>c4</h1>
+        <input type="range" min="-1" max="100" value="-1" step="1" class="c4" id="idc4">
+        <div id="c4-output" class="output">-1</div>
+    </div>
+
+    <div class="d4-cont">
+        <h1>d4</h1>
+        <input type="range" min="0.5" max="1.5" value="1" step="0.1" class="d4" id="idd4">
+        <div id="d4-output" class="output">1</div>
+    </div>
+</div>
+
+<!-- trying to makle a circle -->
+<div class="scene">
+  <div class="sphere" id="sphere">
+  	
+  
+  </div>
+</div>
+
+
+
+
+  </body>
+
+  
+  </html>
